@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RRfE2sSwEj795A4jj23S/g2pAnHzTnCMFmJawhRTcoFiIaQLhMJtdwjpPt2qR3Jl9eCvRAkf8XrsYa9EztnY4w==",
+  "dgSpecHash": "76aH46T+cb8sn/ERKWRhx69Pq9yPUM1SOcDJr3CEnlDyy2BTIDZgBnKAl7Wx1xvqk3bG7CQDOJwOnvSAR7IFUw==",
   "success": true,
-  "projectFilePath": "F:\\ContactsManager\\ContactsManager.UI\\ContactsManager.UI.csproj",
+  "projectFilePath": "F:\\contacts-manager\\ContactsManager.UI\\ContactsManager.UI.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

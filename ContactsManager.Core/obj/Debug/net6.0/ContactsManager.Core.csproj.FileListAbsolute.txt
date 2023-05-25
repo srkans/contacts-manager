@@ -10,3 +10,15 @@ F:\ContactsManager\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.dl
 F:\ContactsManager\ContactsManager.Core\obj\Debug\net6.0\refint\ContactsManager.Core.dll
 F:\ContactsManager\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.pdb
 F:\ContactsManager\ContactsManager.Core\obj\Debug\net6.0\ref\ContactsManager.Core.dll
+F:\contacts-manager\ContactsManager.Core\bin\Debug\net6.0\ContactsManager.Core.deps.json
+F:\contacts-manager\ContactsManager.Core\bin\Debug\net6.0\ContactsManager.Core.dll
+F:\contacts-manager\ContactsManager.Core\bin\Debug\net6.0\ContactsManager.Core.pdb
+F:\contacts-manager\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.csproj.AssemblyReference.cache
+F:\contacts-manager\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.GeneratedMSBuildEditorConfig.editorconfig
+F:\contacts-manager\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.AssemblyInfoInputs.cache
+F:\contacts-manager\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.AssemblyInfo.cs
+F:\contacts-manager\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.csproj.CoreCompileInputs.cache
+F:\contacts-manager\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.dll
+F:\contacts-manager\ContactsManager.Core\obj\Debug\net6.0\refint\ContactsManager.Core.dll
+F:\contacts-manager\ContactsManager.Core\obj\Debug\net6.0\ContactsManager.Core.pdb
+F:\contacts-manager\ContactsManager.Core\obj\Debug\net6.0\ref\ContactsManager.Core.dll

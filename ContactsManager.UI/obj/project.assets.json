@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\ContactsManager\\ContactsManager.UI\\ContactsManager.UI.csproj",
+      "projectUniqueName": "F:\\contacts-manager\\ContactsManager.UI\\ContactsManager.UI.csproj",
       "projectName": "ContactsManager.UI",
-      "projectPath": "F:\\ContactsManager\\ContactsManager.UI\\ContactsManager.UI.csproj",
+      "projectPath": "F:\\contacts-manager\\ContactsManager.UI\\ContactsManager.UI.csproj",
       "packagesPath": "C:\\Users\\serka\\.nuget\\packages\\",
-      "outputPath": "F:\\ContactsManager\\ContactsManager.UI\\obj\\",
+      "outputPath": "F:\\contacts-manager\\ContactsManager.UI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\serka\\AppData\\Roaming\\NuGet\\NuGet.Config",

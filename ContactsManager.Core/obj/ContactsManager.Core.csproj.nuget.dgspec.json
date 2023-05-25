@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\ContactsManager\\ContactsManager.Core\\ContactsManager.Core.csproj": {}
+    "F:\\contacts-manager\\ContactsManager.Core\\ContactsManager.Core.csproj": {}
   },
   "projects": {
-    "F:\\ContactsManager\\ContactsManager.Core\\ContactsManager.Core.csproj": {
+    "F:\\contacts-manager\\ContactsManager.Core\\ContactsManager.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\ContactsManager\\ContactsManager.Core\\ContactsManager.Core.csproj",
+        "projectUniqueName": "F:\\contacts-manager\\ContactsManager.Core\\ContactsManager.Core.csproj",
         "projectName": "ContactsManager.Core",
-        "projectPath": "F:\\ContactsManager\\ContactsManager.Core\\ContactsManager.Core.csproj",
+        "projectPath": "F:\\contacts-manager\\ContactsManager.Core\\ContactsManager.Core.csproj",
         "packagesPath": "C:\\Users\\serka\\.nuget\\packages\\",
-        "outputPath": "F:\\ContactsManager\\ContactsManager.Core\\obj\\",
+        "outputPath": "F:\\contacts-manager\\ContactsManager.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\serka\\AppData\\Roaming\\NuGet\\NuGet.Config",
