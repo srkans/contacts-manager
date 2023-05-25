@@ -1,21 +1,52 @@
+using ContactsManager.Core.Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+using ServiceContracts;
+using Services;
+using RepositoryContracts;
+using Repositories;
+using Serilog;
+using CRUDExample.Filters.ActionFilters;
+using CRUDExample;
+using CRUDExample.Middleware;
+using ContactsManager.UI;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddRazorPages();
+//Logging Serilog
+builder.Host.UseSerilog((HostBuilderContext context, IServiceProvider services, LoggerConfiguration loggerConfiguration) =>
+{
+    loggerConfiguration.ReadFrom.Configuration(context.Configuration)
+                       .ReadFrom.Services(services);  
+}); //serilog'un konfigurasyon ayarlarini ve servisleri okumayabilmesi icin
+
+builder.Services.ConfigureServices(builder.Configuration); //my extension
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+if (builder.Environment.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage();
+}
+else
 {
     app.UseExceptionHandler("/Error");
+    app.UseExceptionHandlingMiddleware();
 }
+
+app.UseSerilogRequestLogging();
+
+
+if (builder.Environment.IsEnvironment("Test") != true)
+{ 
+Rotativa.AspNetCore.RotativaConfiguration.Setup("wwwroot", wkhtmltopdfRelativePath: "Rotativa");
+}
+
 app.UseStaticFiles();
-
 app.UseRouting();
+app.MapControllers();
 
-app.UseAuthorization();
-
-app.MapRazorPages();
+app.UseHttpLogging();
 
 app.Run();
+
+public partial class Program { }
