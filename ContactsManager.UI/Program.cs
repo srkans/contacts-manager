@@ -9,6 +9,7 @@ using CRUDExample.Filters.ActionFilters;
 using CRUDExample;
 using CRUDExample.Middleware;
 using ContactsManager.UI;
+using Microsoft.AspNetCore.Authorization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -42,8 +43,12 @@ Rotativa.AspNetCore.RotativaConfiguration.Setup("wwwroot", wkhtmltopdfRelativePa
 }
 
 app.UseStaticFiles();
-app.UseAuthentication(); // reading identity cookie
+
 app.UseRouting(); //Identifying action method based route
+app.UseAuthentication(); // reading identity cookie
+
+app.UseAuthorization(); //validates access permissions of the user
+
 app.MapControllers(); //Execute the filter pipeline (action + filters)
 
 app.UseHttpLogging();

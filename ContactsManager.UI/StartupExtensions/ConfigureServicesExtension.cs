@@ -9,6 +9,7 @@ using ContactsManager.Infrastructure;
 using ContactsManager.Core.Domain.IdentityEntities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ContactsManager.UI
 {
@@ -59,6 +60,16 @@ namespace ContactsManager.UI
                     .AddDefaultTokenProviders()
                     .AddUserStore<UserStore<ApplicationUser, ApplicationRole, ApplicationDbContext, Guid>>()
                     .AddRoleStore<RoleStore<ApplicationRole,ApplicationDbContext,Guid>>();
+
+            services.AddAuthorization(options =>
+            {
+                options.FallbackPolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+            }); //user must be authenticated for all the action methods
+
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.LoginPath = "/Account/Login";
+            }); //kullanıcı login olmadıysa burada yazan url'e yönlendir.
 
             services.AddHttpLogging(options =>
             {
