@@ -134,3 +134,8 @@ F:\contacts-manager\ContactsManager.UI\bin\Debug\net6.0\ContactsManager.Infrastr
 F:\contacts-manager\ContactsManager.UI\bin\Debug\net6.0\ContactsManager.Core.pdb
 F:\contacts-manager\ContactsManager.UI\bin\Debug\net6.0\ContactsManager.Infrastructure.pdb
 F:\contacts-manager\ContactsManager.UI\obj\Debug\net6.0\ContactsManager.UI.csproj.CopyComplete
+F:\contacts-manager\ContactsManager.UI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\contacts-manager\ContactsManager.UI\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\contacts-manager\ContactsManager.UI\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\contacts-manager\ContactsManager.UI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+F:\contacts-manager\ContactsManager.UI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

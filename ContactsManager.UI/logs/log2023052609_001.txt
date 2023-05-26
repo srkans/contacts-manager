@@ -1,0 +1,36 @@
+2023-05-26 09:05:57.995 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-26 09:05:58.017 +03:00 [INF] Hosting environment: Development
+2023-05-26 09:05:58.045 +03:00 [INF] Content root path: F:\contacts-manager\ContactsManager.UI\
+2023-05-26 09:08:00.587 +03:00 [INF] User profile is available. Using 'C:\Users\serka\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-26 09:08:00.750 +03:00 [INF] Now listening on: http://localhost:5130
+2023-05-26 09:08:00.952 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/Account/Register - -
+2023-05-26 09:08:01.075 +03:00 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/Register
+2023-05-26 09:08:01.107 +03:00 [INF] Executing endpoint 'ContactsManager.UI.Controllers.AccountController.Register (ContactsManager.UI)'
+2023-05-26 09:08:01.168 +03:00 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller ContactsManager.UI.Controllers.AccountController (ContactsManager.UI).
+2023-05-26 09:08:01.199 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync before-method
+2023-05-26 09:08:01.204 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync after-method
+2023-05-26 09:08:01.219 +03:00 [INF] Executing ViewResult, running view Register.
+2023-05-26 09:08:01.658 +03:00 [INF] Executed ViewResult - view Register executed in 440.9332ms.
+2023-05-26 09:08:01.667 +03:00 [INF] Executed action ContactsManager.UI.Controllers.AccountController.Register (ContactsManager.UI) in 471.084ms
+2023-05-26 09:08:01.670 +03:00 [INF] Executed endpoint 'ContactsManager.UI.Controllers.AccountController.Register (ContactsManager.UI)'
+2023-05-26 09:08:01.675 +03:00 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2023-05-26 09:08:01.679 +03:00 [INF] HTTP GET /Account/Register responded 200 in 676.9627 ms
+2023-05-26 09:08:01.706 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/Account/Register - - - 200 - text/html;+charset=utf-8 761.5938ms
+2023-05-26 09:08:01.733 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/_vs/browserLink - -
+2023-05-26 09:08:01.741 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/_framework/aspnetcore-browser-refresh.js - -
+2023-05-26 09:08:01.747 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 5.4939ms
+2023-05-26 09:08:01.791 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 58.1671ms
+2023-05-26 09:08:01.887 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5130/logo.png - -
+2023-05-26 09:08:01.926 +03:00 [INF] Sending file. Request path: '/logo.png'. Physical path: 'F:\contacts-manager\ContactsManager.UI\wwwroot\logo.png'
+2023-05-26 09:08:01.994 +03:00 [INF] HTTP GET /logo.png responded 200 in 94.6202 ms
+2023-05-26 09:08:02.000 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5130/logo.png - - - 200 35992 image/png 113.0032ms
