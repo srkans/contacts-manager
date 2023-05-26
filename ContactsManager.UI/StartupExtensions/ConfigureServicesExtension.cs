@@ -46,7 +46,15 @@ namespace ContactsManager.UI
                 options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
             });
 
-            services.AddIdentity<ApplicationUser, ApplicationRole>()
+            services.AddIdentity<ApplicationUser, ApplicationRole>(options =>
+                    {
+                        options.Password.RequiredLength = 4;
+                        options.Password.RequireNonAlphanumeric = false; 
+                        options.Password.RequireUppercase = false; 
+                        options.Password.RequireDigit = false;
+                        options.Password.RequireLowercase = false;
+                        options.Password.RequiredUniqueChars = 4; //Eg: 1234 4 farklı karakter mevcut
+                    })
                     .AddEntityFrameworkStores<ApplicationDbContext>()
                     .AddDefaultTokenProviders()
                     .AddUserStore<UserStore<ApplicationUser, ApplicationRole, ApplicationDbContext, Guid>>()
