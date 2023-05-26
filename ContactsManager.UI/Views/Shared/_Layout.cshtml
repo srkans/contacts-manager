@@ -23,8 +23,8 @@
                     <div class="flex-1 pr" id="search-box-div">
                         <div class="navbar account-links">
                             <ul>
-                            @if (User.Identity.IsAuthenticated)
-                            {
+                                @if (User.Identity.IsAuthenticated)
+                                {
                                     <li>
                                         <i class="fa-solid fa-user"></i>
                                         @User.Identity?.Name
@@ -32,16 +32,36 @@
                                     <li>
                                         <a asp-controller="Account" asp-action="Logout">Logout</a>
                                     </li>
-                            }
-                            else
-                            {
-                                    <li>
-                                        <a asp-controller="Account" asp-action="Register">Register</a>
-                                    </li>
-                                    <li>
-                                        <a asp-controller="Account" asp-action="Login">Login</a>
-                                    </li>
-                            }
+                                }
+                                else
+                                {
+                                    @if (ViewBag.CurrentUrl == "~/Account/Register")
+                                    {
+                                        <li>
+                                            <a asp-controller="Account" asp-action="Register" class="nav-active">Register</a>
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li>
+                                            <a asp-controller="Account" asp-action="Register">Register</a>
+                                        </li>
+                                    }
+
+                                    @if (ViewBag.CurrentUrl == "~/Account/Login")
+                                    {
+                                        <li>
+                                            <a asp-controller="Account" asp-action="Login" class="nav-active">Login</a>
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li>
+                                            <a asp-controller="Account" asp-action="Login">Login</a>
+                                        </li>
+                                    }
+
+                                }
                             </ul>
                         </div>
                     </div>
@@ -50,8 +70,23 @@
             <div class="navbar mb">
                 <ul>
                     <li>
-                        <a asp-controller="Persons" asp-action="Index">Persons</a>
-                        <a asp-controller="Countries" asp-action="UploadFromExcel">Upload Excel File</a>
+                        @if (ViewBag.CurrentUrl == "~/Persons/Index")
+                        {
+                            <a asp-controller="Persons" asp-action="Index" class="nav-active">Persons</a>
+                        }
+                        else
+                        {
+                            <a asp-controller="Persons" asp-action="Index">Persons</a>
+                        }
+                        @if (ViewBag.CurrentUrl == "~/Countries/UploadFromExcel")
+                        {
+                            <a asp-controller="Countries" asp-action="UploadFromExcel" class="nav-active">Upload Excel File</a>
+                        }
+                        else
+                        {
+                            <a asp-controller="Countries" asp-action="UploadFromExcel">Upload Excel File</a>
+                        }
+
                     </li>
                 </ul>
             </div>
