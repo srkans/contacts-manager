@@ -3,11 +3,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System;
 using ContactsManager.Core.Domain.Entities;
-
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using ContactsManager.Core.Domain.IdentityEntities;
 
 namespace ContactsManager.Infrastructure
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser,ApplicationRole,Guid>
     {
 
         public ApplicationDbContext(DbContextOptions options) : base(options) 
