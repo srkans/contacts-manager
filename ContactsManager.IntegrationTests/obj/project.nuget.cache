@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/zTL2jYkLr+NPw7teZCWKC8nIjIzYWblYWQ0+iKDHH3Edsu+MyE8vmR+fF4kg94n9enCmhEltItvmnaSJondEQ==",
+  "dgSpecHash": "q+qFNKMeE44bObVyK9z62/QIxgYYykb7biQyi7ooFPNcv1t8YwmrJahAM4zpQGCb9s+ROeBVhBsqP0jO/PILwA==",
   "success": true,
   "projectFilePath": "F:\\contacts-manager\\ContactsManager.IntegrationTests\\ContactsManager.IntegrationTests.csproj",
   "expectedPackageFiles": [
