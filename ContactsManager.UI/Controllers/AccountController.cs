@@ -102,5 +102,19 @@ namespace ContactsManager.UI.Controllers
             
             return RedirectToAction(nameof(PersonsController.Index), "Persons");
         }
+
+        public async Task<IActionResult> IsEmailAlreadyRegistered(string email)
+        {
+            ApplicationUser user = await _userManager.FindByEmailAsync(email);
+
+            if (user == null)
+            {
+                return Json(true); //browser can only get json result for this validation
+            }
+            else
+            {
+                return Json(false);
+            }
+        }
     }
 }
