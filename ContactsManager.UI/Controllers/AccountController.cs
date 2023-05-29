@@ -13,11 +13,13 @@ namespace ContactsManager.UI.Controllers
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly RoleManager<ApplicationRole> _roleManager;
 
-        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
+        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager, RoleManager<ApplicationRole> roleManager)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _roleManager = roleManager;
 
         }
 
@@ -48,6 +50,23 @@ namespace ContactsManager.UI.Controllers
 
             if (result.Succeeded)
             {
+                if(registerDTO.UserType == Core.Enums.UserTypeOptions.Admin)
+                {
+                    //Create Admin role
+                    if (await _roleManager.FindByNameAsync(Core.Enums.UserTypeOptions.Admin.ToString()) is null)
+                    {
+                        ApplicationRole applicationRole = new ApplicationRole() { Name = Core.Enums.UserTypeOptions.Admin.ToString() };
+                        await _roleManager.CreateAsync(applicationRole);
+                    }
+                    //add new user to admin role
+                    await _userManager.AddToRoleAsync(user, Core.Enums.UserTypeOptions.Admin.ToString());
+                }
+                else
+                {
+                    //add new user to user role
+                    await _userManager.AddToRoleAsync(user, Core.Enums.UserTypeOptions.User.ToString());
+                }
+
                 //Sign in
                 await _signInManager.SignInAsync(user, false); //true -->authentication cookie will be persistent
 
