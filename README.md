@@ -23,3 +23,4 @@ Complete ASP.Net Core features with Clean Architecture
 •	Error Handling
 •	SOLID Principles
 •	Clean Architecture
+•	Identity and Authorization
