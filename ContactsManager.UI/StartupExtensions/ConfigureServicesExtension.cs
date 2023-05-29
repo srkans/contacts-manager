@@ -10,6 +10,7 @@ using ContactsManager.Core.Domain.IdentityEntities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ContactsManager.UI
 {
@@ -24,6 +25,8 @@ namespace ContactsManager.UI
                 ILogger<ResponseHeaderActionFilter> logger = services.BuildServiceProvider().GetRequiredService<ILogger<ResponseHeaderActionFilter>>(); 
 
                 options.Filters.Add(new ResponseHeaderActionFilter(logger) { Key = "My-Key-From-Global", Value = "My-Value-From-Global", Order = 2 });
+
+                options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute());
             });
 
             //add services into IoC container

@@ -83,7 +83,6 @@ namespace CRUDExample.Controllers
         [HttpPost]
         [TypeFilter(typeof(PersonCreateAndEditPostActionFilter))]
         [TypeFilter(typeof(FeatureDisabledResourceFilter), Arguments = new object[] {false})] //sonra false yapmak kolay olsun diye
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(PersonAddRequest personRequest)
         {
             PersonResponse personResponse = await _personsAdderService.AddPerson(personRequest);
@@ -117,7 +116,6 @@ namespace CRUDExample.Controllers
         [Route("[action]/{personID}")] // ~/persons/edit/1
         [TypeFilter(typeof(PersonCreateAndEditPostActionFilter))]
         [TypeFilter(typeof(TokenAuthorizationFilter))]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(PersonUpdateRequest personRequest)
         {
             PersonResponse? personResponse = await _personsGetterService.GetPersonByPersonID(personRequest.PersonID);
@@ -148,7 +146,6 @@ namespace CRUDExample.Controllers
 
         [HttpPost]
         [Route("[action]/{personID}")] // ~/persons/delete/1
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(PersonUpdateRequest personUpdateResult)
         {
             PersonResponse? personResponse = await _personsGetterService.GetPersonByPersonID(personUpdateResult.PersonID);
