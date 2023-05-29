@@ -34,6 +34,9 @@ else
     app.UseExceptionHandlingMiddleware();
 }
 
+app.UseHsts(); //browser'ý https'i aktif etmesi için bilgilendiriyor.
+app.UseHttpsRedirection();
+
 app.UseSerilogRequestLogging();
 
 
