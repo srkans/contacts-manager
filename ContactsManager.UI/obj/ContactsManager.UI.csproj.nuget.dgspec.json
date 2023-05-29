@@ -232,6 +232,10 @@
               "target": "Package",
               "version": "[6.0.9, )"
             },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
             "Rotativa.AspNetCore": {
               "target": "Package",
               "version": "[1.2.0, )"

@@ -51,6 +51,15 @@ app.UseAuthorization(); //validates access permissions of the user
 
 app.MapControllers(); //Execute the filter pipeline (action + filters)
 
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "areas",
+        pattern: "{area:exists}/{controller=Home}/{action=Index}"
+        );
+    //Admin/Home/Index
+});
+
 app.UseHttpLogging();
 
 app.Run();
