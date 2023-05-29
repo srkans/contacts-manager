@@ -25,7 +25,6 @@ namespace CRUDExample.Controllers
 
         [HttpPost]
         [Route("UploadFromExcel")]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> UploadFromExcel(IFormFile excelFile)
         {
             if (excelFile == null || excelFile.Length == 0)

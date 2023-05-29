@@ -32,7 +32,6 @@ namespace ContactsManager.UI.Controllers
 
         [HttpPost]
         [Authorize("NotAuthorized")]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(RegisterDTO registerDTO)
         {
             if (ModelState.IsValid == false)
@@ -102,7 +101,6 @@ namespace ContactsManager.UI.Controllers
 
         [HttpPost]
         [Authorize("NotAuthorized")]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginDTO loginDTO, string? ReturnUrl)
         {
             if(ModelState.IsValid == false)
