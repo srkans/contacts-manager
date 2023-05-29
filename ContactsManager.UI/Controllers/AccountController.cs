@@ -32,6 +32,7 @@ namespace ContactsManager.UI.Controllers
 
         [HttpPost]
         [Authorize("NotAuthorized")]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(RegisterDTO registerDTO)
         {
             if (ModelState.IsValid == false)
@@ -65,6 +66,12 @@ namespace ContactsManager.UI.Controllers
                 }
                 else
                 {
+                    //Create User role
+                    if (await _roleManager.FindByNameAsync(Core.Enums.UserTypeOptions.User.ToString()) is null)
+                    {
+                        ApplicationRole applicationRole = new ApplicationRole() { Name = Core.Enums.UserTypeOptions.User.ToString() };
+                        await _roleManager.CreateAsync(applicationRole);
+                    }
                     //add new user to user role
                     await _userManager.AddToRoleAsync(user, Core.Enums.UserTypeOptions.User.ToString());
                 }
@@ -95,6 +102,7 @@ namespace ContactsManager.UI.Controllers
 
         [HttpPost]
         [Authorize("NotAuthorized")]
+        [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginDTO loginDTO, string? ReturnUrl)
         {
             if(ModelState.IsValid == false)
@@ -136,6 +144,7 @@ namespace ContactsManager.UI.Controllers
             return RedirectToAction(nameof(PersonsController.Index), "Persons");
         }
 
+        [AllowAnonymous]
         public async Task<IActionResult> IsEmailAlreadyRegistered(string email)
         {
             ApplicationUser user = await _userManager.FindByEmailAsync(email);

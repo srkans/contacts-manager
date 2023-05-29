@@ -1,0 +1,41 @@
+2023-05-29 15:34:59.588 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-29 15:34:59.599 +03:00 [INF] Hosting environment: Development
+2023-05-29 15:34:59.606 +03:00 [INF] Content root path: F:\contacts-manager\ContactsManager.UI\
+2023-05-29 15:37:38.410 +03:00 [INF] User profile is available. Using 'C:\Users\serka\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-29 15:37:38.622 +03:00 [INF] Now listening on: https://localhost:5130
+2023-05-29 15:37:38.970 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5130/ - -
+2023-05-29 15:37:39.113 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-29 15:37:39.143 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2023-05-29 15:37:39.151 +03:00 [INF] HTTP GET / responded 302 in 116.9398 ms
+2023-05-29 15:37:39.172 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5130/ - - - 302 0 - 212.0108ms
+2023-05-29 15:37:39.176 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5130/Account/Login?ReturnUrl=%2F - -
+2023-05-29 15:37:39.188 +03:00 [INF] Executing endpoint 'ContactsManager.UI.Controllers.AccountController.Login (ContactsManager.UI)'
+2023-05-29 15:37:39.239 +03:00 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactsManager.UI.Controllers.AccountController (ContactsManager.UI).
+2023-05-29 15:37:39.548 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync before-method
+2023-05-29 15:37:39.570 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync after-method
+2023-05-29 15:37:39.590 +03:00 [INF] Executing ViewResult, running view Login.
+2023-05-29 15:37:40.247 +03:00 [INF] Executed ViewResult - view Login executed in 658.504ms.
+2023-05-29 15:37:40.253 +03:00 [INF] Executed action ContactsManager.UI.Controllers.AccountController.Login (ContactsManager.UI) in 1010.0571ms
+2023-05-29 15:37:40.257 +03:00 [INF] Executed endpoint 'ContactsManager.UI.Controllers.AccountController.Login (ContactsManager.UI)'
+2023-05-29 15:37:40.262 +03:00 [INF] HTTP GET /Account/Login responded 200 in 1083.1946 ms
+2023-05-29 15:37:40.285 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5130/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 1108.6644ms
+2023-05-29 15:37:40.417 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5130/_framework/aspnetcore-browser-refresh.js - -
+2023-05-29 15:37:40.423 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5130/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 6.3790ms
+2023-05-29 15:37:40.431 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5130/_vs/browserLink - -
+2023-05-29 15:37:40.455 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5130/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.0723ms
+2023-05-29 15:37:42.813 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5130/Account/Register - -
+2023-05-29 15:37:42.822 +03:00 [INF] Executing endpoint 'ContactsManager.UI.Controllers.AccountController.Register (ContactsManager.UI)'
+2023-05-29 15:37:42.827 +03:00 [INF] Route matched with {action = "Register", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller ContactsManager.UI.Controllers.AccountController (ContactsManager.UI).
+2023-05-29 15:37:42.839 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync before-method
+2023-05-29 15:37:42.842 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync after-method
+2023-05-29 15:37:42.846 +03:00 [INF] Executing ViewResult, running view Register.
+2023-05-29 15:37:42.904 +03:00 [INF] Executed ViewResult - view Register executed in 59.4715ms.
+2023-05-29 15:37:42.908 +03:00 [INF] Executed action ContactsManager.UI.Controllers.AccountController.Register (ContactsManager.UI) in 76.0109ms
+2023-05-29 15:37:42.914 +03:00 [INF] Executed endpoint 'ContactsManager.UI.Controllers.AccountController.Register (ContactsManager.UI)'
+2023-05-29 15:37:42.916 +03:00 [INF] HTTP GET /Account/Register responded 200 in 98.2788 ms
+2023-05-29 15:37:42.921 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5130/Account/Register - - - 200 - text/html;+charset=utf-8 107.7026ms
+2023-05-29 15:37:42.930 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5130/_framework/aspnetcore-browser-refresh.js - -
+2023-05-29 15:37:42.930 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5130/_vs/browserLink - -
+2023-05-29 15:37:42.933 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5130/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 2.4831ms
+2023-05-29 15:37:42.964 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5130/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 33.9885ms

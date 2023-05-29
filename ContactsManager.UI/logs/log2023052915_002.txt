@@ -1,0 +1,65 @@
+2023-05-29 15:33:03.426 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-29 15:33:03.433 +03:00 [INF] Hosting environment: Development
+2023-05-29 15:33:03.439 +03:00 [INF] Content root path: F:\contacts-manager\ContactsManager.UI\
+2023-05-29 15:34:59.387 +03:00 [INF] User profile is available. Using 'C:\Users\serka\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-05-29 15:34:59.582 +03:00 [INF] Now listening on: https://localhost:5130
+2023-05-29 15:34:59.978 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5130/ - -
+2023-05-29 15:35:00.124 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-29 15:35:00.133 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2023-05-29 15:35:00.137 +03:00 [INF] HTTP GET / responded 302 in 92.1277 ms
+2023-05-29 15:35:00.154 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5130/ - - - 302 0 - 182.5189ms
+2023-05-29 15:35:00.159 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5130/Account/Login?ReturnUrl=%2F - -
+2023-05-29 15:35:00.171 +03:00 [INF] Executing endpoint 'ContactsManager.UI.Controllers.AccountController.Login (ContactsManager.UI)'
+2023-05-29 15:35:00.221 +03:00 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactsManager.UI.Controllers.AccountController (ContactsManager.UI).
+2023-05-29 15:35:00.469 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync before-method
+2023-05-29 15:35:00.474 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync after-method
+2023-05-29 15:35:00.487 +03:00 [INF] Executing ViewResult, running view Login.
+2023-05-29 15:35:00.963 +03:00 [INF] Executed ViewResult - view Login executed in 475.7739ms.
+2023-05-29 15:35:00.973 +03:00 [INF] Executed action ContactsManager.UI.Controllers.AccountController.Login (ContactsManager.UI) in 747.5918ms
+2023-05-29 15:35:00.978 +03:00 [INF] Executed endpoint 'ContactsManager.UI.Controllers.AccountController.Login (ContactsManager.UI)'
+2023-05-29 15:35:00.983 +03:00 [INF] HTTP GET /Account/Login responded 200 in 820.7267 ms
+2023-05-29 15:35:01.007 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5130/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 848.2357ms
+2023-05-29 15:35:01.026 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5130/_framework/aspnetcore-browser-refresh.js - -
+2023-05-29 15:35:01.027 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5130/_vs/browserLink - -
+2023-05-29 15:35:01.036 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5130/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 9.6507ms
+2023-05-29 15:35:01.074 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5130/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 47.0380ms
+2023-05-29 15:35:02.740 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5130/Account/Register - -
+2023-05-29 15:35:02.749 +03:00 [INF] Executing endpoint 'ContactsManager.UI.Controllers.AccountController.Register (ContactsManager.UI)'
+2023-05-29 15:35:02.753 +03:00 [INF] Route matched with {action = "Register", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Register() on controller ContactsManager.UI.Controllers.AccountController (ContactsManager.UI).
+2023-05-29 15:35:02.765 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync before-method
+2023-05-29 15:35:02.768 +03:00 [INF] ResponseHeaderActionFilter.OnActionExecutionAsync after-method
+2023-05-29 15:35:02.773 +03:00 [INF] Executing ViewResult, running view Register.
+2023-05-29 15:35:02.827 +03:00 [INF] Executed ViewResult - view Register executed in 56.9933ms.
+2023-05-29 15:35:02.833 +03:00 [INF] Executed action ContactsManager.UI.Controllers.AccountController.Register (ContactsManager.UI) in 75.8447ms
+2023-05-29 15:35:02.839 +03:00 [INF] Executed endpoint 'ContactsManager.UI.Controllers.AccountController.Register (ContactsManager.UI)'
+2023-05-29 15:35:02.842 +03:00 [INF] HTTP GET /Account/Register responded 200 in 98.8814 ms
+2023-05-29 15:35:02.848 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5130/Account/Register - - - 200 - text/html;+charset=utf-8 108.7413ms
+2023-05-29 15:35:02.856 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5130/_framework/aspnetcore-browser-refresh.js - -
+2023-05-29 15:35:02.856 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5130/_vs/browserLink - -
+2023-05-29 15:35:02.859 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5130/_framework/aspnetcore-browser-refresh.js - - - 200 12006 application/javascript;+charset=utf-8 2.3560ms
+2023-05-29 15:35:02.874 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5130/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.8091ms
+2023-05-29 15:35:03.643 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5130/Account/IsEmailAlreadyRegistered?Email=john%40yahoo.com - -
+2023-05-29 15:35:03.646 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-29 15:35:03.668 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2023-05-29 15:35:03.674 +03:00 [INF] HTTP GET /Account/IsEmailAlreadyRegistered responded 401 in 27.7822 ms
+2023-05-29 15:35:03.678 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5130/Account/IsEmailAlreadyRegistered?Email=john%40yahoo.com - - - 401 0 - 34.9297ms
+2023-05-29 15:35:08.584 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5130/Account/IsEmailAlreadyRegistered?Email=a%40yahoo.com - -
+2023-05-29 15:35:08.587 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-29 15:35:08.588 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2023-05-29 15:35:08.590 +03:00 [INF] HTTP GET /Account/IsEmailAlreadyRegistered responded 401 in 3.2530 ms
+2023-05-29 15:35:08.593 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5130/Account/IsEmailAlreadyRegistered?Email=a%40yahoo.com - - - 401 0 - 8.0931ms
+2023-05-29 15:35:08.639 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5130/Account/IsEmailAlreadyRegistered?Email=al%40yahoo.com - -
+2023-05-29 15:35:08.643 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-29 15:35:08.644 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2023-05-29 15:35:08.645 +03:00 [INF] HTTP GET /Account/IsEmailAlreadyRegistered responded 401 in 2.9302 ms
+2023-05-29 15:35:08.649 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5130/Account/IsEmailAlreadyRegistered?Email=al%40yahoo.com - - - 401 0 - 9.2728ms
+2023-05-29 15:35:08.870 +03:00 [INF] Request starting HTTP/2 GET https://localhost:5130/Account/IsEmailAlreadyRegistered?Email=ali%40yahoo.com - -
+2023-05-29 15:35:08.873 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2023-05-29 15:35:08.874 +03:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2023-05-29 15:35:08.875 +03:00 [INF] HTTP GET /Account/IsEmailAlreadyRegistered responded 401 in 2.4795 ms
+2023-05-29 15:35:08.878 +03:00 [INF] Request finished HTTP/2 GET https://localhost:5130/Account/IsEmailAlreadyRegistered?Email=ali%40yahoo.com - - - 401 0 - 7.3816ms
