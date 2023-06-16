@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "j2hZp5Tfv/eowCMuvyU6eXEgl3BAGQd8Z2Ym53Z5ZDpiOQcn2TxXLeyQsvm77ZOsaEh23WXLG6sA7QkIBkbOLw==",
+  "dgSpecHash": "npumMR9B+rH0aIe1GKHQuSaa+RfiTaeWZY27DUyLL3V395MEzbS4xYFDubst2x7BB2TO3Cqoz4sg2piRpb/M4Q==",
   "success": true,
   "projectFilePath": "F:\\contacts-manager\\ContactsManager.UI\\ContactsManager.UI.csproj",
   "expectedPackageFiles": [
@@ -177,6 +177,7 @@
     "C:\\Users\\serka\\.nuget\\packages\\serilog.sinks.console\\4.0.1\\serilog.sinks.console.4.0.1.nupkg.sha512",
     "C:\\Users\\serka\\.nuget\\packages\\serilog.sinks.debug\\2.0.0\\serilog.sinks.debug.2.0.0.nupkg.sha512",
     "C:\\Users\\serka\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512",
+    "C:\\Users\\serka\\.nuget\\packages\\serilog.sinks.http\\8.0.0\\serilog.sinks.http.8.0.0.nupkg.sha512",
     "C:\\Users\\serka\\.nuget\\packages\\serilog.sinks.mssqlserver\\5.8.0\\serilog.sinks.mssqlserver.5.8.0.nupkg.sha512",
     "C:\\Users\\serka\\.nuget\\packages\\serilog.sinks.periodicbatching\\3.1.0\\serilog.sinks.periodicbatching.3.1.0.nupkg.sha512",
     "C:\\Users\\serka\\.nuget\\packages\\serilog.sinks.seq\\5.2.1\\serilog.sinks.seq.5.2.1.nupkg.sha512",

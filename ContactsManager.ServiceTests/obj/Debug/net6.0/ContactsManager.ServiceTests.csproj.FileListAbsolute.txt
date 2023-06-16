@@ -182,3 +182,10 @@ F:\contacts-manager\ContactsManager.ServiceTests\bin\Debug\net6.0\Microsoft.Exte
 F:\contacts-manager\ContactsManager.ServiceTests\bin\Debug\net6.0\Microsoft.Extensions.WebEncoders.dll
 F:\contacts-manager\ContactsManager.ServiceTests\bin\Debug\net6.0\System.Security.Cryptography.Xml.dll
 F:\contacts-manager\ContactsManager.ServiceTests\bin\Debug\net6.0\System.Security.Permissions.dll
+F:\contacts-manager\ContactsManager.ServiceTests\bin\Debug\net6.0\Microsoft.AspNetCore.Antiforgery.dll
+F:\contacts-manager\ContactsManager.ServiceTests\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.Abstractions.dll
+F:\contacts-manager\ContactsManager.ServiceTests\bin\Debug\net6.0\Microsoft.AspNetCore.Html.Abstractions.dll
+F:\contacts-manager\ContactsManager.ServiceTests\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+F:\contacts-manager\ContactsManager.ServiceTests\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Formatters.Json.dll
+F:\contacts-manager\ContactsManager.ServiceTests\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.ViewFeatures.dll
+F:\contacts-manager\ContactsManager.ServiceTests\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
