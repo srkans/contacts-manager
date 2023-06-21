@@ -19,8 +19,10 @@ Complete ASP.Net Core features with Clean Architecture
 •	Entity Framework
 •	Unit Testing Advanced – Integration tests
 •	Logging – Serilog
+•	Elastic Stack (Logstash -> Elastic -> Kibana (HTTP))
 •	Filters
 •	Error Handling
 •	SOLID Principles
 •	Clean Architecture
 •	Identity and Authorization
+•	Azure Pipelines
