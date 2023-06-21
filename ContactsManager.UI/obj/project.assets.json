@@ -3441,23 +3441,6 @@
           }
         }
       },
-      "Serilog.Sinks.Http/8.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "2.0.0",
-          "Serilog.Sinks.File": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.1/Serilog.Sinks.Http.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.1/Serilog.Sinks.Http.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "Serilog.Sinks.MSSqlServer/5.8.0": {
         "type": "package",
         "dependencies": {
@@ -9459,27 +9442,6 @@
         "serilog.sinks.file.nuspec"
       ]
     },
-    "Serilog.Sinks.Http/8.0.0": {
-      "sha512": "eHyl2/93Roymf2eudPl/6Eeu2GQ93Ucy4GM1UPF0jyd7CIW8r+Bk5ohdbjjyjB9TQSpP2ovOuj6ltf9DjoWHtg==",
-      "type": "package",
-      "path": "serilog.sinks.http/8.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "lib/net45/Serilog.Sinks.Http.dll",
-        "lib/net45/Serilog.Sinks.Http.xml",
-        "lib/net461/Serilog.Sinks.Http.dll",
-        "lib/net461/Serilog.Sinks.Http.xml",
-        "lib/netstandard2.0/Serilog.Sinks.Http.dll",
-        "lib/netstandard2.0/Serilog.Sinks.Http.xml",
-        "lib/netstandard2.1/Serilog.Sinks.Http.dll",
-        "lib/netstandard2.1/Serilog.Sinks.Http.xml",
-        "serilog-sink-nuget.png",
-        "serilog.sinks.http.8.0.0.nupkg.sha512",
-        "serilog.sinks.http.nuspec"
-      ]
-    },
     "Serilog.Sinks.MSSqlServer/5.8.0": {
       "sha512": "QC3MA3x1jj6u5iMZQVZC9pCcp/HVt2gWcyjdL5Hd2nWsxdBxoBULQnie4i03xn3LpX/U7rCboPYXNYPcUgfcWw==",
       "type": "package",
@@ -14295,7 +14257,6 @@
       "Rotativa.AspNetCore >= 1.2.0",
       "Serilog >= 2.12.0",
       "Serilog.AspNetCore >= 6.0.1",
-      "Serilog.Sinks.Http >= 8.0.0",
       "Serilog.Sinks.MSSqlServer >= 5.8.0",
       "Serilog.Sinks.Seq >= 5.2.1"
     ]
@@ -14321,7 +14282,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -14381,10 +14342,6 @@
             "target": "Package",
             "version": "[6.0.1, )"
           },
-          "Serilog.Sinks.Http": {
-            "target": "Package",
-            "version": "[8.0.0, )"
-          },
           "Serilog.Sinks.MSSqlServer": {
             "target": "Package",
             "version": "[5.8.0, )"
@@ -14413,7 +14370,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

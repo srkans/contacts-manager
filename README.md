@@ -19,7 +19,6 @@ Complete ASP.Net Core features with Clean Architecture
 •	Entity Framework
 •	Unit Testing Advanced – Integration tests
 •	Logging – Serilog
-•	ELK Stack (app->logstash->elasticsearch sink.http)
 •	Filters
 •	Error Handling
 •	SOLID Principles
